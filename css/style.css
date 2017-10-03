@@ -65,25 +65,26 @@ body{
 .text a:hover{
     color: #fff;
 }
-.slider{
+.slides{
     width: 100%;
     height: 100%;
-    /*display: table-cell;*/
+    position: absolute;
 }
-.slider .item{
+.slides--item{
     width: 100%;
     height: 100%;
-    /*display: table-cell;*/
-    background-position: right center;
+    position: absolute;            
+    transition: opacity 2s;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../img/content/slider/item1.jpg);
+    background-image: url(../img/content/slider/item3.jpg);
+    background-position: center center;
 }
-.slider .item.i2{
+.slides--item:nth-child(2){
     background-image: url(../img/content/slider/item2.jpg);
     background-position: left center;
 }
-.slider .item.i3{
-    background-image: url(../img/content/slider/item3.jpg);
-    background-position: center center;
+.slides--item:nth-child(3){
+    background-image: url(../img/content/slider/item1.jpg);
+    background-position: right center;
 }
